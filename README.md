@@ -21,11 +21,19 @@ A fictional streaming-service catalogue built as a hands-on **Git fundamentals e
 ```
 webflyx/
 ├── contents.md          # Index of the collection
-├── titles.md            # Current movie titles
-├── classics.csv         # Classic movies (title, director, year)
+├── titles.md            # Current movie titles (with genre links)
+├── classics.csv         # Classic movies (title, director, year, genre)
 ├── guilty_pleasures.md  # Secret favourites (tell no one)
 ├── advert.md            # Marketing copy
 ├── advert.html          # Rendered marketing page
+├── genres/
+│   ├── adventure.md     # Adventure movies
+│   ├── comedy.md        # Comedy movies
+│   ├── drama.md         # Drama movies
+│   ├── horror.md        # Horror movies
+│   ├── romance.md       # Romance movies
+│   ├── sci-fi.md        # Sci-Fi movies
+│   └── thriller.md      # Thriller movies
 ├── quotes/
 │   ├── dune.md          # Memorable Dune quotes
 │   └── starwars.md      # Memorable Star Wars quotes
@@ -53,7 +61,7 @@ webflyx/
 
 | Priority | Feature | Description |
 |---|---|---|
-| High | Genre tagging | Add `genres/` directory with markdown files per genre; each movie links to its genre |
+| ✅ High | Genre tagging | Add `genres/` directory with markdown files per genre; each movie links to its genre |
 | Medium | Rating system | Extend `classics.csv` with a `rating` column and a `ratings.md` leaderboard |
 | Low | Search script | A simple Python or shell script to grep the collection by title, director, or year |
 
