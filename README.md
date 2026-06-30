@@ -22,7 +22,8 @@ A fictional streaming-service catalogue built as a hands-on **Git fundamentals e
 webflyx/
 ├── contents.md          # Index of the collection
 ├── titles.md            # Current movie titles (with genre links)
-├── classics.csv         # Classic movies (title, director, year, genre)
+├── classics.csv         # Classic movies (title, director, year, genre, rating)
+├── ratings.md           # Leaderboard ranked by personal rating (out of 10)
 ├── guilty_pleasures.md  # Secret favourites (tell no one)
 ├── advert.md            # Marketing copy
 ├── advert.html          # Rendered marketing page
@@ -62,7 +63,7 @@ webflyx/
 | Priority | Feature | Description |
 |---|---|---|
 | ✅ High | Genre tagging | Add `genres/` directory with markdown files per genre; each movie links to its genre |
-| Medium | Rating system | Extend `classics.csv` with a `rating` column and a `ratings.md` leaderboard |
+| ✅ Medium | Rating system | Extend `classics.csv` with a `rating` column and a `ratings.md` leaderboard |
 | Low | Search script | A simple Python or shell script to grep the collection by title, director, or year |
 
 ## Running Locally
